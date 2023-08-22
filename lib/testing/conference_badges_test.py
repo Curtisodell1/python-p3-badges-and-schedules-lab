@@ -20,7 +20,7 @@ class TestConferenceBadges:
         "Hello, my name is Grace.",
         "Hello, my name is Linus.",
         "Hello, my name is Matz."
-      ]
+    ]
 
     MESSAGES = [
         "Hello, Guido! You'll be assigned to room 1!", 
@@ -40,9 +40,9 @@ class TestConferenceBadges:
         assert(badge_maker("Guido van Rossum") == "Hello, my name is Guido van Rossum.")
 
     def test_batch_badge_creator(self):
-      '''contains a function "batch_badge_creator()" that creates and returns a list of badges.'''
-      assert(type(batch_badge_creator(TestConferenceBadges.NAMES)) == list)
-      assert(batch_badge_creator(TestConferenceBadges.NAMES) == TestConferenceBadges.BADGES)
+        '''contains a function "batch_badge_creator()" that creates and returns a list of badges.'''
+        assert(type(batch_badge_creator(TestConferenceBadges.NAMES)) == list)
+        assert(batch_badge_creator(TestConferenceBadges.NAMES) == TestConferenceBadges.BADGES)
 
     def test_assign_rooms(self):
         '''contains a function "assign_rooms" that returns a list of welcome messages and room assignments.'''
